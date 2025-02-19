@@ -29,10 +29,10 @@
 	<h2 style="display: flex; align-items: center; justify-content: center">
 		<object type="image/svg+xml" data="pics/square-f5.svg" style="width: 72px; height: 72px;"></object>-TTS: <span style="margin-left: 10px;"></span> 
 	</h2>
-      <h3>A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching</h3>
+      <h3>Accelerating Flow-Matching-Based Text-to-Speech via Empirically Pruned Step Sampling</h3>
       <h5> <i>Anonymous</i> </h5>
 	</div>
-	<p><b>Abstract</b> This paper introduces F5-TTS, a fully non-autoregressive text-to-speech system based on flow matching with Diffusion Transformer (DiT). Without requiring complex designs such as duration model, text encoder, and phoneme alignment, the text input is simply padded with filler tokens to the same length as input speech, and then the denoising is performed for speech generation, which was originally proved feasible by E2 TTS. However, the original design of E2 TTS makes it hard to follow due to its slow convergence and low robustness. To address these issues, we first model the input with ConvNeXt to refine the text representation, making it easy to align with the speech. We further propose an inference-time Sway Sampling strategy, which significantly improves our model’s performance and efficiency. This sampling strategy for flow step can be easily applied to existing flow matching based models without retraining. Our design allows faster training and achieves an inference RTF of 0.15, which is greatly improved compared to state-of-the-art diffusion-based TTS models. Trained on a public 100K hours multilingual dataset, our Fairytaler Fakes Fluent and Faithful speech with Flow matching (F5-TTS) exhibits highly natural and expressive zero-shot ability, seamless code-switching capability, and speed control efficiency. Demo samples can be found at <a href="https://F5-TTS.github.io">https://F5-TTS.github.io</a>. We will release all code and checkpoints to promote community development.
+	<p><b>Abstract</b> Flow-matching-based text-to-speech (TTS) models, such as Voicebox, E2 TTS, and F5-TTS, have attracted significant attention in recent years. These models require multiple sampling steps to reconstruct speech from noise, making inference speed a key challenge. Reducing the number of sampling steps can greatly improve inference efficiency. To this end, we introduce Fast F5-TTS, a training-free approach to accelerate the inference of flow-matching-based TTS models. By inspecting the sampling trajectory of F5-TTS, we identify redundant steps and propose Empirically Pruned Step Sampling (EPSS), a non-uniform time-step sampling strategy that effectively reduces the number of sampling steps. Our approach achieves a 7-step generation with an inference RTF of 0.049 on an NVIDIA RTX 3090 GPU, making it 4× faster than the original F5-TTS while maintaining comparable performance. Furthermore, EPSS performs well on the E2 TTS model, demonstrating its strong generalization ability.
 	</p>
 
 	<p>
@@ -50,7 +50,7 @@
 
 	
 </div>
-
+<!-- 
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">		
 	<h2 id="model-overview" style="text-align: center;">Model Overview</h2>
@@ -443,7 +443,7 @@
 
 </article>
 </main>
-</div>
+</div> -->
 
 </body>
 </html>

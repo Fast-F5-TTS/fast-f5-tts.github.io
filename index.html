@@ -27,15 +27,15 @@
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<div class="text-center">
 	<h2 style="display: flex; align-items: center; justify-content: center">
-		<object type="image/svg+xml" data="pics/square-f5.svg" style="width: 72px; height: 72px;"></object>-TTS: <span style="margin-left: 10px;"></span> 
+		Fast F5-TTS: <span style="margin-left: 10px;"></span> 
 	</h2>
       <h3>Accelerating Flow-Matching-Based Text-to-Speech via Empirically Pruned Step Sampling</h3>
       <h5> <i>Anonymous</i> </h5>
 	</div>
-	<p><b>Abstract</b> Flow-matching-based text-to-speech (TTS) models, such as Voicebox, E2 TTS, and F5-TTS, have attracted significant attention in recent years. These models require multiple sampling steps to reconstruct speech from noise, making inference speed a key challenge. Reducing the number of sampling steps can greatly improve inference efficiency. To this end, we introduce Fast F5-TTS, a training-free approach to accelerate the inference of flow-matching-based TTS models. By inspecting the sampling trajectory of F5-TTS, we identify redundant steps and propose Empirically Pruned Step Sampling (EPSS), a non-uniform time-step sampling strategy that effectively reduces the number of sampling steps. Our approach achieves a 7-step generation with an inference RTF of 0.049 on an NVIDIA RTX 3090 GPU, making it 4× faster than the original F5-TTS while maintaining comparable performance. Furthermore, EPSS performs well on the E2 TTS model, demonstrating its strong generalization ability.
+	<p><b>Abstract</b> Flow-matching-based text-to-speech (TTS) models, such as Voicebox, E2 TTS, and F5-TTS, have attracted significant attention in recent years. These models require multiple sampling steps to reconstruct speech from noise, making inference speed a key challenge. Reducing the number of sampling steps can greatly improve inference efficiency. To this end, we introduce Fast F5-TTS, a training-free approach to accelerate the inference of flow-matching-based TTS models. By inspecting the sampling trajectory of F5-TTS, we identify redundant steps and propose Empirically Pruned Step Sampling (EPSS), a non-uniform time-step sampling strategy that effectively reduces the number of sampling steps. Our approach achieves a 7-step generation with an inference RTF of 0.030 on an NVIDIA RTX 3090 GPU, making it 4 times faster than the original F5-TTS while maintaining comparable performance. Furthermore, EPSS performs well on E2 TTS models, demonstrating its strong generalization ability.
 	</p>
 
-	<p>
+<!-- 	<p>
 	<b>Contents</b>
       <ul>
         <li><a href="#model-overview">Model Overview</a></li>
@@ -44,7 +44,7 @@
         <li><a href="#emotion">Emotion</a></li>
 		<li><a href="#robustness">Robustness</a></li>
       </ul>
-	</p>
+	</p> -->
 
 	<p><b>This page is for research demonstration purposes only.</b></p>
 

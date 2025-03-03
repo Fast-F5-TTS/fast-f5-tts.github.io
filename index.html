@@ -235,15 +235,20 @@
     
     <!-- Prompt and Text to Generate -->
     <div class="mb-4">
-        <h4>Prompt:</h4>
-        <audio controls style="width: 100%; max-width: 400px;">
-            <source src="audios/zero_shot/seedtts_ref_en_1.wav" type="audio/wav">
-            Your browser does not support the audio element.
-        </audio>
-        <h4 class="mt-3">Text to Generate:</h4>
-        <p>
-            I don't really care what you call me. I've been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring. Respect me and I'll nurture you; ignore me and you shall face the consequences.
-        </p>
+        <p>This table shows the sampling time-step schedules for different NFEs in Fast F5-TTS and F5-TTS. The black dots illustrate the location of sampling time-steps before Sway Sampling.</p>
+    
+        <div style="display: flex; align-items: center;">
+            <b>Prompt:</b>
+            <audio controls style="width: 100%; max-width: 400px; margin-left: 10px;">
+                <source src="audios/zero_shot/seedtts_ref_en_1.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    
+        <div class="mt-3">
+            <b>Text to Generate:</b>
+                I don't really care what you call me. I've been a silent spectator, watching species evolve, empires rise and fall. But always remember, I am mighty and enduring.
+        </div>
     </div>
     <!-- Table -->
     <div class="table-responsive">
@@ -282,9 +287,9 @@
                         </audio>
                     </td>
                 </tr>
-                <!-- NFE = 6 -->
+                <!-- NFE = 6a -->
                 <tr>
-                    <td style="text-align: center; vertical-align: middle;">6</td>
+                    <td style="text-align: center; vertical-align: middle;">6a</td>
                     <!-- Fast F5-TTS (EPSS) -->
                     <td style="text-align: center; vertical-align: middle; padding: 0px;">
                         <img src="figs/nfes/demo_nfe6a_epss.png" alt="Time-steps for NFE=6a (Fast F5-TTS, EPSS)" style="width: 500px; height: auto;">
@@ -292,6 +297,30 @@
                     <td style="vertical-align: middle; text-align: center; padding: 5px;">
                         <audio controls style="width: 190px;">
                             <source src="audios/zero_shot/seedtts_gen_en_1_nfe6a_epss.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                    <!-- F5-TTS (Non-EPSS) -->
+                    <td style="text-align: center; vertical-align: middle; padding: 0px;">
+                        <img src="figs/nfes/demo_nfe6.png" alt="Time-steps for NFE=6 (F5-TTS, Non-EPSS)" style="width: 500px; height: auto;">
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; padding: 5px;">
+                        <audio controls style="width: 190px;">
+                            <source src="audios/zero_shot/seedtts_gen_en_1_nfe6.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+                <!-- NFE = 6b -->
+                <tr>
+                    <td style="text-align: center; vertical-align: middle;">6b</td>
+                    <!-- Fast F5-TTS (EPSS) -->
+                    <td style="text-align: center; vertical-align: middle; padding: 0px;">
+                        <img src="figs/nfes/demo_nfe6b_epss.png" alt="Time-steps for NFE=6b (Fast F5-TTS, EPSS)" style="width: 500px; height: auto;">
+                    </td>
+                    <td style="vertical-align: middle; text-align: center; padding: 5px;">
+                        <audio controls style="width: 190px;">
+                            <source src="audios/zero_shot/seedtts_gen_en_1_nfe6b_epss.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
@@ -326,30 +355,6 @@
                     <td style="vertical-align: middle; text-align: center; padding: 5px;">
                         <audio controls style="width: 190px;">
                             <source src="audios/zero_shot/seedtts_gen_en_1_nfe7.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </td>
-                </tr>
-                <!-- NFE = 10 -->
-                <tr>
-                    <td style="text-align: center; vertical-align: middle;">10</td>
-                    <!-- Fast F5-TTS (EPSS) -->
-                    <td style="text-align: center; vertical-align: middle; padding: 0px;">
-                        <img src="figs/nfes/demo_nfe10_epss.png" alt="Time-steps for NFE=10 (Fast F5-TTS, EPSS)" style="width: 500px; height: auto;">
-                    </td>
-                    <td style="vertical-align: middle; text-align: center; padding: 5px;">
-                        <audio controls style="width: 190px;">
-                            <source src="audios/zero_shot/seedtts_gen_en_1_nfe10_epss.wav" type="audio/wav">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </td>
-                    <!-- F5-TTS (Non-EPSS) -->
-                    <td style="text-align: center; vertical-align: middle; padding: 0px;">
-                        <img src="figs/nfes/demo_nfe10.png" alt="Time-steps for NFE=10 (F5-TTS, Non-EPSS)" style="width: 500px; height: auto;">
-                    </td>
-                    <td style="vertical-align: middle; text-align: center; padding: 5px;">
-                        <audio controls style="width: 190px;">
-                            <source src="audios/zero_shot/seedtts_gen_en_1_nfe10.wav" type="audio/wav">
                             Your browser does not support the audio element.
                         </audio>
                     </td>
